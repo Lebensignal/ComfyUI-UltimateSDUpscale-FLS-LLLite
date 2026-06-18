@@ -1,0 +1,17 @@
+[project]
+name = "comfyui-ultimate-sd-upscale-fls-lllite"
+description = "ComfyUI Ultimate SD Upscale nodes with FLS tile sampling and optional Anima LLLite tile repair."
+version = "0.1.0"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.urls]
+Repository = "https://github.com/Lebensignal/ComfyUI-UltimateSDUpscale-FLS-LLLite"
+Issues = "https://github.com/Lebensignal/ComfyUI-UltimateSDUpscale-FLS-LLLite/issues"
+
+[tool.comfy]
+PublisherId = "lebensignal"
+DisplayName = "ComfyUI Ultimate SD Upscale FLS LLLite"
+Icon = ""
+

@@ -1,0 +1,280 @@
+{
+  "description": "Generic Anima-style FLS + LLLite Ultimate SD Upscale example with placeholder model names.",
+  "enabled": true,
+  "parameters": {
+    "positive": {
+      "node_id": "11",
+      "field": "text",
+      "required": true,
+      "type": "string",
+      "description": "Positive prompt"
+    },
+    "negative": {
+      "node_id": "12",
+      "field": "text",
+      "required": true,
+      "type": "string",
+      "description": "Negative prompt"
+    },
+    "width": {
+      "node_id": "28",
+      "field": "width",
+      "required": false,
+      "type": "int",
+      "description": "Base image width before upscale"
+    },
+    "height": {
+      "node_id": "28",
+      "field": "height",
+      "required": false,
+      "type": "int",
+      "description": "Base image height before upscale"
+    },
+    "batch_size": {
+      "node_id": "28",
+      "field": "batch_size",
+      "required": false,
+      "type": "int",
+      "description": "Batch size"
+    },
+    "seed": {
+      "node_id": "19",
+      "field": "seed",
+      "required": false,
+      "type": "int",
+      "description": "Base FLS sampler seed"
+    },
+    "steps": {
+      "node_id": "19",
+      "field": "steps",
+      "required": false,
+      "type": "int",
+      "description": "Base FLS sampler steps"
+    },
+    "cfg": {
+      "node_id": "19",
+      "field": "cfg",
+      "required": false,
+      "type": "float",
+      "description": "Base FLS sampler CFG"
+    },
+    "sampler_name": {
+      "node_id": "19",
+      "field": "sampler_name",
+      "required": false,
+      "type": "string",
+      "description": "Base FLS sampler name"
+    },
+    "scheduler": {
+      "node_id": "19",
+      "field": "scheduler",
+      "required": false,
+      "type": "string",
+      "description": "Base FLS scheduler"
+    },
+    "denoise": {
+      "node_id": "19",
+      "field": "denoise",
+      "required": false,
+      "type": "float",
+      "description": "Base FLS denoise"
+    },
+    "fovea_strength": {
+      "node_id": "19",
+      "field": "fovea_strength",
+      "required": false,
+      "type": "float",
+      "description": "Base FLS fovea strength"
+    },
+    "sharpness": {
+      "node_id": "19",
+      "field": "sharpness",
+      "required": false,
+      "type": "float",
+      "description": "Base FLS sharpness"
+    },
+    "mask_inertia": {
+      "node_id": "19",
+      "field": "mask_inertia",
+      "required": false,
+      "type": "float",
+      "description": "Base FLS mask inertia"
+    },
+    "teacache_threshold": {
+      "node_id": "61",
+      "field": "threshold",
+      "required": false,
+      "type": "float",
+      "description": "TeaCache threshold"
+    },
+    "lora1_name": {
+      "node_id": "62",
+      "field": "lora_name",
+      "required": false,
+      "type": "string",
+      "description": "First LoRA filename"
+    },
+    "lora1_strength_model": {
+      "node_id": "62",
+      "field": "strength_model",
+      "required": false,
+      "type": "float",
+      "description": "First LoRA model strength"
+    },
+    "lora1_strength_clip": {
+      "node_id": "62",
+      "field": "strength_clip",
+      "required": false,
+      "type": "float",
+      "description": "First LoRA CLIP strength"
+    },
+    "lora2_name": {
+      "node_id": "63",
+      "field": "lora_name",
+      "required": false,
+      "type": "string",
+      "description": "Second LoRA filename"
+    },
+    "lora2_strength_model": {
+      "node_id": "63",
+      "field": "strength_model",
+      "required": false,
+      "type": "float",
+      "description": "Second LoRA model strength"
+    },
+    "lora2_strength_clip": {
+      "node_id": "63",
+      "field": "strength_clip",
+      "required": false,
+      "type": "float",
+      "description": "Second LoRA CLIP strength"
+    },
+    "lora3_name": {
+      "node_id": "64",
+      "field": "lora_name",
+      "required": false,
+      "type": "string",
+      "description": "Third LoRA filename"
+    },
+    "lora3_strength_model": {
+      "node_id": "64",
+      "field": "strength_model",
+      "required": false,
+      "type": "float",
+      "description": "Third LoRA model strength"
+    },
+    "lora3_strength_clip": {
+      "node_id": "64",
+      "field": "strength_clip",
+      "required": false,
+      "type": "float",
+      "description": "Third LoRA CLIP strength"
+    },
+    "upscale_model_name": {
+      "node_id": "60",
+      "field": "model_name",
+      "required": false,
+      "type": "string",
+      "description": "Upscale model filename"
+    },
+    "upscale_by": {
+      "node_id": "70",
+      "field": "upscale_by",
+      "required": false,
+      "type": "float",
+      "description": "Ultimate SD Upscale scale factor"
+    },
+    "upscale_seed": {
+      "node_id": "70",
+      "field": "seed",
+      "required": false,
+      "type": "int",
+      "description": "Ultimate SD Upscale seed"
+    },
+    "upscale_steps": {
+      "node_id": "70",
+      "field": "steps",
+      "required": false,
+      "type": "int",
+      "description": "Ultimate SD Upscale steps"
+    },
+    "upscale_cfg": {
+      "node_id": "70",
+      "field": "cfg",
+      "required": false,
+      "type": "float",
+      "description": "Ultimate SD Upscale CFG"
+    },
+    "upscale_denoise": {
+      "node_id": "70",
+      "field": "denoise",
+      "required": false,
+      "type": "float",
+      "description": "Ultimate SD Upscale denoise"
+    },
+    "tile_width": {
+      "node_id": "70",
+      "field": "tile_width",
+      "required": false,
+      "type": "int",
+      "description": "Ultimate SD Upscale tile width"
+    },
+    "tile_height": {
+      "node_id": "70",
+      "field": "tile_height",
+      "required": false,
+      "type": "int",
+      "description": "Ultimate SD Upscale tile height"
+    },
+    "tile_padding": {
+      "node_id": "70",
+      "field": "tile_padding",
+      "required": false,
+      "type": "int",
+      "description": "Ultimate SD Upscale tile padding"
+    },
+    "upscale_fovea_strength": {
+      "node_id": "70",
+      "field": "fovea_strength",
+      "required": false,
+      "type": "float",
+      "description": "FLS accelerated upscale fovea strength"
+    },
+    "upscale_sharpness": {
+      "node_id": "70",
+      "field": "sharpness",
+      "required": false,
+      "type": "float",
+      "description": "FLS accelerated upscale sharpness"
+    },
+    "upscale_mask_inertia": {
+      "node_id": "70",
+      "field": "mask_inertia",
+      "required": false,
+      "type": "float",
+      "description": "FLS accelerated upscale mask inertia"
+    },
+    "lllite_model_name": {
+      "node_id": "70",
+      "field": "lllite_model_name",
+      "required": false,
+      "type": "string",
+      "description": "LLLite model filename from ComfyUI/models/controlnet"
+    },
+    "lllite_strength": {
+      "node_id": "70",
+      "field": "lllite_strength",
+      "required": false,
+      "type": "float",
+      "description": "LLLite strength"
+    },
+    "filename_prefix": {
+      "node_id": "52",
+      "field": "filename_prefix",
+      "required": false,
+      "type": "string",
+      "description": "Output filename prefix"
+    }
+  }
+}
+

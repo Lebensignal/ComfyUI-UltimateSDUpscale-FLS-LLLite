@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Do not commit local ComfyUI payloads or generated data.
+models/
+input/
+output/
+temp/
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.gguf
+
+# Runtime-downloaded upstream script cache.
+repositories/ultimate_sd_upscale/
+
